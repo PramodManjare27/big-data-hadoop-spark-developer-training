@@ -1,0 +1,4 @@
+org\simplilearn\TemperateMapper.class
+org\simplilearn\WordCountMapper.class
+org\simplilearn\WordCountDriver.class
+org\simplilearn\WordCountReducer.class
