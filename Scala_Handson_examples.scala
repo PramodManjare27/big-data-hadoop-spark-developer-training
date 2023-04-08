@@ -13,7 +13,12 @@ b++=List(1,2,3,4)
 val a = Set( 1,2,3,4).union(Set(1,2,3))
 println(a)
 List( 1 ,2,3.0 , "Hello")
+//map
 
+val z = Map ( 1 -> "one", 2 -> "two")
+z.+(3 -> "three")
+z.getOrElse(3, "not found")
+z.get(3)
 
 object testing extends App {
 
