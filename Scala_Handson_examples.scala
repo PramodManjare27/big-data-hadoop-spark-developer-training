@@ -42,6 +42,35 @@ object testing extends App {
   }
 }
 
+//misc
+
+import scala.collection.mutable.ListBuffer
+val a = List( 1,2,3,4)
+val b = List ( 3,4,5,6)
+
+val c = Array (1,2,3)
+
+val d = ListBuffer[Int]()
+d+=5
+d(0) = 1000
+a.toSet.&(b.toSet)
+
+val tup = (1, "a", 1.24)
+tup._1
+
+val Map1 = Map(1 -> 2  , 2->4)
+Map1.getOrElse(1, "else")
+
+val q = Set(1,2,3,4)
+
+
+import scala.collection.mutable.Set
+ val p = Set(1,2,3,4)
+p+=(10)
+p(1)
+
+
+
 
 def fun( x : Int) = x + 1
 println(fun(4))
