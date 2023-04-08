@@ -322,3 +322,21 @@ def func1 ( L : List[Int] ) : Int = {
 func1(List(1,2,3))
 
 List(1,2,3).sum
+
+//Higher Order function - 
+
+def cubeSum (x: Int ) : Int = {
+  x*x*x
+}
+
+def sqrSum (x: Int ) : Int = {
+  x*x
+}
+
+def genericSum ( funct : Int => Int , x : Int ) : Int ={
+  if (x <= 0 ) 0
+  else funct(x) + genericSum( funct, x-1)
+} 
+
+genericSum( cubeSum , 2)
+genericSum(sqrSum , 2)
