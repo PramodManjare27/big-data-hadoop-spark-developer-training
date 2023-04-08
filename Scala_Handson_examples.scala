@@ -238,3 +238,16 @@ def  fact ( x : Int): Int = {
 }
 
 fact (10)
+
+------------------
+// Inner functions 
+   def filter1(x : List[Int], Threshold : Int): List[Int] = {
+     def innerfltr (y : List[Int]):List[Int] ={
+       if (y.isEmpty) y
+       else if (y.head < Threshold) y.head :: innerfltr(y.tail)
+       else innerfltr(y.tail)
+     }
+     innerfltr(x)
+   }
+  filter1(List(1,2,3,4,5,5,6,7,8,9), 4)
+
