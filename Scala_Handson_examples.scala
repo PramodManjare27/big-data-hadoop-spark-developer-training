@@ -340,3 +340,11 @@ def genericSum ( funct : Int => Int , x : Int ) : Int ={
 
 genericSum( cubeSum , 2)
 genericSum(sqrSum , 2)
+
+// Patterns - 
+
+
+List.range(1 , 10).filter(x=> x < 9).foreach(x=> println("*" * x))
+List.range(1 , 10).reverse.foreach(x=> println("*" * x))
+
+//"*" * 19
