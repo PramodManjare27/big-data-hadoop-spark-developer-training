@@ -221,4 +221,20 @@ val c = a match {
 }
 
 
+--------------
+optimized tailrec recursion - 
+import scala.annotation.tailrec  
+@tailrec def factorial (x : Int, Accum : Int = 1):Int= {
+  if (x <= 1) Accum 
+  else factorial( x - 1 , x * Accum)
+}
 
+println(factorial (3, 1))
+
+
+def  fact ( x : Int): Int = {
+  if (x <= 0) 1
+  else x * fact(x -1)
+}
+
+fact (10)
