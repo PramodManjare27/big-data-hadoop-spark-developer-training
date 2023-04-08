@@ -69,7 +69,14 @@ import scala.collection.mutable.Set
 p+=(10)
 p(1)
 
+// Streams
 
+
+val x = 1#::2#::3#::Stream.Empty
+x.foreach(println)
+x.head
+x(1)
+x.intersect( Stream(1,2,3)).toSet
 
 
 def fun( x : Int) = x + 1
