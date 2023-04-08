@@ -20,6 +20,17 @@ z.+(3 -> "three")
 z.getOrElse(3, "not found")
 z.get(3)
 
+
+//set 
+Set(1,2,3,4).&(Set(1,2))
+val a = Set(1,5,3,4,5)
+a.foreach(println)
+a(2)
+a.+(3)
+
+
+
+
 object testing extends App {
 
   val aCondtion = true
