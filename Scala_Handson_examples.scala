@@ -251,3 +251,12 @@ fact (10)
    }
   filter1(List(1,2,3,4,5,5,6,7,8,9), 4)
 
+
+------------------
+// List operations imperative apporach vs functional approch  
+def func1 ( L : List[Int] ) : Int = {
+  if (L == Nil)  0 else L.head + func1(L.tail)
+}
+func1(List(1,2,3))
+
+List(1,2,3).sum
