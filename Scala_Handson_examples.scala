@@ -1,5 +1,15 @@
 Recap - 
+import scala.collection.mutable.ListBuffer
 
+import scala.collection.mutable.ArrayBuffer
+val a = new ArrayBuffer[Int](5)
+print(a)
+a+=1
+a++=List(1,2,3,4)
+
+val b = ListBuffer[Int]()
+b+=3
+b++=List(1,2,3,4)
 val a = Set( 1,2,3,4).union(Set(1,2,3))
 println(a)
 List( 1 ,2,3.0 , "Hello")
